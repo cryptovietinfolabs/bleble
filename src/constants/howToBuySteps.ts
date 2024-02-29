@@ -10,7 +10,7 @@ export const howToBuySteps = [
     desc: "Have ETH in your wallet to switch to BLE BLE. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.",
   },
   {
-    image: "/demask.png",
+    image: "/amm.png",
     title: "Go to AMM",
     desc: "Connect to AMM. Go to Demask.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Select BLE BLE, and confirm. When Metamask prompts you for a wallet signature, sign.",
   },
