@@ -10,5 +10,26 @@
     position: relative;
     width: 100%;
     aspect-ratio: 1;
+    img {
+      transform: translateX(-50%) translateY(-50%);
+      left: 50% !important;
+      top: 50% !important;
+      width: 65% !important;
+      height: auto !important;
+      aspect-ratio: 1 !important;
+      z-index: 1;
+    }
+  }
+
+  &_circularProgress {
+    position: absolute;
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, #121212 79%, transparent 80% 100%),
+      conic-gradient(var(--brand-yellow-200) 75%, var(--brand-camo-300) 0);
+    transform: translateX(-50%) translateY(-50%) scaleX(-1);
+    left: 50% !important;
+    top: 50% !important;
   }
 }

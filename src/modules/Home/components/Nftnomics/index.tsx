@@ -1,5 +1,5 @@
 "use client";
-import { Box, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import gsap from "gsap";
 import Image from "next/image";
 import { useRef } from "react";
@@ -33,11 +33,18 @@ export default function HomeNftnomics(): React.ReactElement {
   return (
     <Container>
       <SimpleGrid columns={{ base: 1, md: 2 }} gap={8} className={s.nftnomics}>
-        <Box className={s.nftnomics_img}>
-          <Image src="/bleble-face.png" alt="bleble" fill />
-        </Box>
+        <Flex justifyContent="center" alignItems="center">
+          <Box className={s.nftnomics_img}>
+            <Image src="/bleble-avatar.png" alt="bleble" fill />
+            <Box className={s.nftnomics_circularProgress}>
+              <progress value={75} max={100} className={"hidden w-0 h-0"}>
+                75%
+              </progress>
+            </Box>
+          </Box>
+        </Flex>
 
-        <Stack spacing={6} ref={textRef}>
+        <Stack spacing={6} ref={textRef} justifyContent="center">
           <Title className={s.nftnomics_title} color="brand.yellow.100">
             Nft nomics
           </Title>

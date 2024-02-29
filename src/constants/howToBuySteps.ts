@@ -11,8 +11,8 @@ export const howToBuySteps = [
   },
   {
     image: "/demask.png",
-    title: "Go to Demask",
-    desc: "Connect to Demask. Go to Demask.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Select BLE BLE, and confirm. When Metamask prompts you for a wallet signature, sign.",
+    title: "Go to AMM",
+    desc: "Connect to AMM. Go to Demask.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Select BLE BLE, and confirm. When Metamask prompts you for a wallet signature, sign.",
   },
   {
     image: "/digital.png",
