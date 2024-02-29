@@ -53,9 +53,10 @@
   cursor: pointer;
   display: none;
   z-index: 9999999;
+  display: block;
 
-  @include onlyMobile {
-    display: block;
+  @include pcSmall {
+    display: none;
   }
 
   span {

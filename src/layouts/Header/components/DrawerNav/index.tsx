@@ -32,7 +32,9 @@ export default function DrawerNav({
               onOpenNav(false);
             }}
           >
-            <Text fontSize="2xl">{item.name}</Text>
+            <Text fontSize="2xl" color="brand.yellow.200">
+              {item.name}
+            </Text>
           </Button>
         ))}
       </div>

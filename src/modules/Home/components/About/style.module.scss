@@ -23,6 +23,12 @@
     @include min-tablet {
       left: unset;
       transform: unset;
+      width: 250px;
+    }
+
+    @include pcSmall {
+      left: unset;
+      transform: unset;
       width: 440px;
     }
   }

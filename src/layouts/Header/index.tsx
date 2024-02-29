@@ -13,7 +13,7 @@ import DrawerNav from "./components/DrawerNav";
 import s from "./style.module.scss";
 
 export default function Header(): React.ReactElement {
-  const { isMobile } = useWindowSize();
+  const { isDesktop } = useWindowSize();
   const [isOpenNav, setIsOpenNav] = useState(false);
 
   return (
@@ -31,7 +31,7 @@ export default function Header(): React.ReactElement {
             </Box>
           </Button>
 
-          {isMobile ? (
+          {!isDesktop ? (
             <>
               <div
                 className={`${s.hamburger} ${isOpenNav ? s.open : ""}`}

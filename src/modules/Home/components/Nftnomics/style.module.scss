@@ -2,8 +2,12 @@
   padding: 120px 0;
 
   &_title {
-    font-size: 96px;
+    font-size: 80px;
     line-height: 100%;
+
+    @include min-tablet {
+      font-size: 96px;
+    }
   }
 
   &_img {

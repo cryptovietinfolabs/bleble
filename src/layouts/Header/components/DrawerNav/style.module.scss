@@ -6,10 +6,10 @@
   z-index: 2;
   transition: all 0.4s var(--easeOutQuart);
   transform: translateY(-100%);
-  display: none;
-
-  @include onlyMobile {
-    display: block;
+  display: block;
+  
+  @include pcSmall {
+    display: none;
   }
 
   &_nav {

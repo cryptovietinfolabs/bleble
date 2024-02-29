@@ -33,9 +33,8 @@ export default function HomeContact(): React.ReactElement {
             />
           </HStack>
           <Text fontSize="3xl" color="brand.yellow.100" textAlign="center">
-            Ble Ble NFT has no association with Tork or his creation Ble the
-            Blast Frog. This token is simply paying homage to a meme we all love
-            and recognize.
+            Ble Ble NFT has no association. This NFT is simply paying homage to
+            a meme we all love and recognize.
           </Text>
           <Text fontSize="3xl" color="brand.yellow.100" textAlign="center">
             Ble Ble is a meme NFT with no intrinsic value or expectation of
