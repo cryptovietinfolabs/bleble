@@ -1,0 +1,62 @@
+.hero {
+  height: 1000px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+
+  @include min-tablet {
+    padding-top: 0;
+  }
+
+  &_inner {
+    .bigTitle {
+      font-size: 64px;
+      line-height: 64px;
+      font-weight: bolder;
+    }
+  }
+
+  &_desc {
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    .desc {
+      font-weight: bold;
+      max-width: 520px;
+    }
+  }
+
+  &_mascot {
+    position: relative;
+    aspect-ratio: 1;
+    transform: scaleX(-1);
+    width: 250px;
+
+    @include min-tablet {
+      width: 500px;
+    }
+  }
+
+  &_punchline {
+    max-width: 580px;
+  }
+
+  &_title {
+    font-size: 96px;
+    line-height: 100%;
+  }
+
+  &_blastBtn {
+    position: relative;
+    width: 256px;
+    aspect-ratio: 800/126;
+
+    &_wrapper {
+      padding: 20px;
+      background-color: #3d3d3d;
+      border-radius: 24px;
+      width: fit-content;
+    }
+  }
+}

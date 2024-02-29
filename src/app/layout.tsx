@@ -1,0 +1,50 @@
+import "../styles/app.scss";
+
+import type { Metadata } from "next";
+import Head from "next/head";
+
+import { nunito } from "@/constants/fonts";
+import Header from "@/layouts/Header";
+
+import Providers from "./providers";
+import Template from "./template";
+import Footer from "@/layouts/Footer";
+
+export const metadata: Metadata = {
+  title: "BleBle",
+  description: "BleBle - Meme of #NFT on Blast.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>): React.ReactElement {
+  return (
+    <html lang="en">
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        ></link>
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        ></link>
+      </Head>
+      <body className={` ${nunito.className}`}>
+        <Providers>
+          <Header />
+          <Template>{children}</Template>
+          <Footer />
+        </Providers>
+      </body>
+    </html>
+  );
+}

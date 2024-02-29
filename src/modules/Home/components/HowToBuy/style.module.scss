@@ -1,0 +1,17 @@
+.htb {
+  padding: 120px 0;
+
+  &_step {
+    &_img {
+      position: relative;
+      min-width: 180px;
+      aspect-ratio: 1;
+    }
+  }
+
+  &_title {
+    @include onlyMobile {
+      font-size: 80px;
+    }
+  }
+}
