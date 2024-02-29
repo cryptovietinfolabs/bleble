@@ -1,9 +1,9 @@
 "use client";
 import { Box, Flex, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 import Container from "@/components/Container";
 import Title from "@/components/Title";
@@ -28,12 +28,12 @@ export default function HomeNftnomics(): React.ReactElement {
             duration: 1.5,
           });
         },
-      })
-    }, [textRef])
+      });
+    }, [textRef]);
     return () => {
-      gsapContext.revert()
-    }
-  }, [textRef])
+      gsapContext.revert();
+    };
+  }, [textRef]);
 
   return (
     <Container>
