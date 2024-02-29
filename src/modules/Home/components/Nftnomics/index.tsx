@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import { useScrollTrigger } from "@/hooks/common/useScrollTrigger";
 
 import s from "./style.module.scss";
 
@@ -35,23 +34,6 @@ export default function HomeNftnomics(): React.ReactElement {
       gsapContext.revert()
     }
   }, [textRef])
-
-  // useScrollTrigger(
-  //   {
-  //     trigger: textRef,
-  //     start: "top bottom",
-  //     end: "bottom bottom",
-  //     onEnter: () => {
-  //       gsap.from(textRef.current, {
-  //         opacity: 0,
-  //         yPercent: 10,
-  //         ease: "power1.in",
-  //         duration: 1.5,
-  //       });
-  //     },
-  //   },
-  //   [textRef],
-  // );
 
   return (
     <Container>
