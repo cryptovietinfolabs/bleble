@@ -1,18 +1,18 @@
 export const howToBuySteps = [
   {
     image: "/metamask.png",
-    title: "Create a Wallet",
-    desc: "Download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.",
+    title: "Config Blast L2 on MetaMask",
+    desc: `Network: Blast Mainnet\nRPC: http://mainnet.blast.io\nID: 81457\nSymbol: ETH\nExplorer: https://blastscan.io`,
   },
   {
     image: "/eth.png",
     title: "Get Some ETH",
-    desc: "Have ETH in your wallet to switch to BLE BLE. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.",
+    desc: "Have ETH on Blast in your wallet to get to BLE BLE memeNFT.",
   },
   {
     image: "/amm.png",
-    title: "Go to AMM",
-    desc: "Connect to AMM. Go to Demask.finance in google chrome or on the browser inside your Metamask app. Connect your wallet. Select BLE BLE, and confirm. When Metamask prompts you for a wallet signature, sign.",
+    title: "Go to NFT Dexs on Blast",
+    desc: "Go to NFT Dexs in google chrome or on the browser inside your Metamask app. Select BLE BLE NFT, and confirm. Congratulations on becoming a Blast member.",
   },
   {
     image: "/digital.png",

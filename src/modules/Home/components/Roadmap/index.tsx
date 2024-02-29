@@ -11,17 +11,17 @@ export default function HomeRoadmap(): React.ReactElement {
     <Container className={s.roadmap}>
       <VStack spacing={6} className={s.roadmap_inner}>
         <Title className={s.roadmap_title} color="brand.yellow.100">
-          Roadmap
+          3 Phases
         </Title>
         <Stack>
           <Text fontSize="3xl" color="brand.yellow.100">
-            Phase 1: Meme
+            Phase 1: Release MemeNFT.
           </Text>
           <Text fontSize="3xl" color="brand.yellow.100">
-            Phase 2: Vibe and HODL
+            Phase 2: Own & make Avatar.
           </Text>
           <Text fontSize="3xl" color="brand.yellow.100">
-            Phase 3: Meme Takeover
+            Phase 3: Ble Ble Takeover.
           </Text>
         </Stack>
       </VStack>

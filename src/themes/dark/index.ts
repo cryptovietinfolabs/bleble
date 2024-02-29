@@ -221,6 +221,16 @@ const Table: ComponentStyleConfig = {
   },
 };
 
+const List: ComponentStyleConfig = {
+  baseStyle: {
+    item: {
+      "&::marker": {
+        color: "brand.yellow.100",
+      },
+    },
+  },
+};
+
 const themeDark = extendTheme({
   colors,
   config,
@@ -241,6 +251,7 @@ const themeDark = extendTheme({
     Modal,
     Select,
     Table,
+    List,
   },
 });
 

@@ -37,17 +37,16 @@ export default function HomeAbout(): React.ReactElement {
           <Box className={s.about_mascot}>
             <Image src="/bleble-body.png" alt="ble ble face" fill />
           </Box>
-
           <Stack spacing={4}>
             <Title color="brand.yellow.100">About</Title>
             <Text fontSize="3xl" color="brand.yellow.100">
-              Blast Has Ble Ble
+              Ble Ble is a funny meme nft for the people, forever (zero taxes,
+              LP burnt and contract renounced).
             </Text>
+
             <Text fontSize="3xl" color="brand.yellow.100">
-              Ble Ble is here to make meme NFT great again. Launched stealth
-              with no presale, zero taxes, LP burnt and contract renounced, Ble
-              Ble is a coin for the people, forever. Fueled by pure memetic
-              power, let Ble Ble show you the way.
+              Ble Ble is here to make the Blast community great. Fueled by pure
+              memetic power, let Ble Ble show you the way to Blast.
             </Text>
           </Stack>
         </SimpleGrid>

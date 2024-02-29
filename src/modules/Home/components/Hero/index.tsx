@@ -3,7 +3,6 @@ import Image from "next/image";
 
 import Container from "@/components/Container";
 import SvgInsert from "@/components/SvgInsert";
-import Title from "@/components/Title";
 
 import s from "./style.module.scss";
 
@@ -18,10 +17,14 @@ export default function HomeHero(): React.ReactElement {
           flexDirection={{ base: "column-reverse", md: "row" }}
         >
           <Stack className={s.hero_punchline} spacing={6}>
-            <Title color="brand.yellow.100">BLE BLE</Title>
+            {/* <Title color="brand.yellow.100">BLE BLE</Title> */}
+            <Box className={s.hero_title}>
+              <Image src={"/bleble.png"} alt="blble logo" fill />
+            </Box>
             <Text fontSize="3xl" color="brand.yellow.100">
-              the most memeable meme-NFT in existence. The Monkeys have had
-              their day, it’s time for Ble Ble to take reign.
+              The First Pure MemeNFT in the Crypto Space (ERC-721, ERC-1155 &
+              ERC-404). The Blast L2 begins, it’s time for Ble Ble to take
+              reign.
             </Text>
             <HStack spacing={6}>
               <IconButton
@@ -37,14 +40,14 @@ export default function HomeHero(): React.ReactElement {
                 aria-label="telegram"
               />
             </HStack>
-            <Box className={s.hero_blastBtn_wrapper}>
+            {/* <Box className={s.hero_blastBtn_wrapper}>
               <Box className={s.hero_blastBtn}>
                 <Image src="/branding/blast.png" alt="blast" fill />
               </Box>
-            </Box>
+            </Box> */}
           </Stack>
           <Box className={s.hero_mascot}>
-            <Image src="/bleble-face.png" alt="ble ble face" fill />
+            <Image src="/bleble-group.png" alt="ble ble face" fill />
           </Box>
         </HStack>
       </Stack>

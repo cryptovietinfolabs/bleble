@@ -1,5 +1,13 @@
 "use client";
-import { Box, Flex, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  ListItem,
+  SimpleGrid,
+  Stack,
+  Text,
+  UnorderedList,
+} from "@chakra-ui/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
@@ -51,22 +59,33 @@ export default function HomeNftnomics(): React.ReactElement {
 
         <Stack spacing={6} ref={textRef} justifyContent="center">
           <Title className={s.nftnomics_title} color="brand.yellow.100">
-            Nft nomics
+            Nft Nomics
           </Title>
           <Stack gap={0}>
             <Title size="md" color="brand.yellow.100">
-              Total supply:
-            </Title>
-            <Title size="md" color="brand.yellow.100">
-              100,000,000
+              Total NFT: Coming soon
             </Title>
           </Stack>
-          <Text fontSize="3xl" color="brand.yellow.100">
-            No Taxes, No Bullshit. It’s that simple.
-          </Text>
+          <UnorderedList>
+            <ListItem>
+              <Text fontSize="2xl" color="brand.yellow.100">
+                2% Airdrop (NFT holders, Staked ETH on Blast, $PePe Holders …)
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text fontSize="2xl" color="brand.yellow.100">
+                PreSale: 48% for Add LP
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text fontSize="2xl" color="brand.yellow.100">
+                Add LP (NFT/ETH): 100%
+              </Text>
+            </ListItem>
+          </UnorderedList>
 
-          <Text fontSize="3xl" color="brand.yellow.100">
-            LP tokens are burnt, and contract ownership is renounced.
+          <Text fontSize="2xl" color="brand.yellow.100">
+            LP Are Burnt, contract Ownership is Renounced.
           </Text>
         </Stack>
       </SimpleGrid>

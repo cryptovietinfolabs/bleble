@@ -42,7 +42,12 @@ export default function HomeHowToBuy(): React.ReactElement {
                     >
                       {step.title}
                     </Text>
-                    <Text fontSize="2xl" color="brand.yellow.100">
+                    <Text
+                      whiteSpace="pre-wrap"
+                      fontSize="2xl"
+                      color="brand.yellow.100"
+                      className={s.htb_desc}
+                    >
                       {step.desc}
                     </Text>
                   </Stack>

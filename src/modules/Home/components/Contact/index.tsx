@@ -11,12 +11,12 @@ export default function HomeContact(): React.ReactElement {
   return (
     <Container>
       <Flex justifyContent="center" className={s.contact}>
-        <VStack spacing={6} maxW="825px">
+        <VStack spacing={6} maxW="625px">
           <Title className={s.contact_title} color="brand.yellow.100">
             Contact
           </Title>
           <Box className={s.contact_logo}>
-            <Image src="/bleble.png" alt="logo" fill />
+            <Image src="/bleble-face.png" alt="logo" fill />
           </Box>
           <HStack spacing={6}>
             <IconButton
@@ -33,13 +33,9 @@ export default function HomeContact(): React.ReactElement {
             />
           </HStack>
           <Text fontSize="3xl" color="brand.yellow.100" textAlign="center">
-            Ble Ble NFT has no association. This NFT is simply paying homage to
-            a meme we all love and recognize.
-          </Text>
-          <Text fontSize="3xl" color="brand.yellow.100" textAlign="center">
-            Ble Ble is a meme NFT with no intrinsic value or expectation of
-            financial return. There is no formal team or roadmap. the coin is
-            completely useless and for entertainment purposes only.
+            Ble Ble NFT has no organization, no leader, no roadmap - so Ble Ble
+            has no intrinsic value. Ble Ble is simply yours, for you and for
+            strong Blast community.
           </Text>
         </VStack>
       </Flex>

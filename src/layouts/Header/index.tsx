@@ -27,7 +27,7 @@ export default function Header(): React.ReactElement {
             href="/"
           >
             <Box className={s.header_logo}>
-              <Image src="/bleble.png" alt="logo" fill />
+              <Image src="/bleble-face.png" alt="logo" fill />
             </Box>
           </Button>
 
