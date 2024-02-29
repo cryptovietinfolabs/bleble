@@ -1,7 +1,8 @@
 import { ChakraProps, Text } from "@chakra-ui/react";
 
-import s from "./style.module.scss";
 import { evening } from "@/constants/fonts";
+
+import s from "./style.module.scss";
 
 interface ITitle extends ChakraProps {
   className?: string;

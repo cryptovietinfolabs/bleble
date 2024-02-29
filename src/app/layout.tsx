@@ -4,11 +4,11 @@ import type { Metadata } from "next";
 import Head from "next/head";
 
 import { nunito } from "@/constants/fonts";
+import Footer from "@/layouts/Footer";
 import Header from "@/layouts/Header";
 
 import Providers from "./providers";
 import Template from "./template";
-import Footer from "@/layouts/Footer";
 
 export const metadata: Metadata = {
   title: "BleBle",

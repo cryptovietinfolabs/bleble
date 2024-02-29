@@ -1,19 +1,18 @@
-import Image from "next/image";
-import s from "./style.module.scss";
 import { Box, Flex, HStack, IconButton, Text, VStack } from "@chakra-ui/react";
-import SvgInsert from "@/components/SvgInsert";
+import Image from "next/image";
+
 import Container from "@/components/Container";
+import SvgInsert from "@/components/SvgInsert";
 import Title from "@/components/Title";
+
+import s from "./style.module.scss";
 
 export default function HomeContact(): React.ReactElement {
   return (
     <Container>
       <Flex justifyContent="center" className={s.contact}>
         <VStack spacing={6} maxW="825px">
-          <Title
-            className={s.contact_title}
-            color="brand.yellow.100"
-          >
+          <Title className={s.contact_title} color="brand.yellow.100">
             Contact
           </Title>
           <Box className={s.contact_logo}>

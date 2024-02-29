@@ -1,4 +1,5 @@
 import { Text } from "@chakra-ui/react";
+
 import s from "./style.module.scss";
 
 export default function Footer(): React.ReactElement {

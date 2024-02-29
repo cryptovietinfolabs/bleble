@@ -1,10 +1,11 @@
 import { Box, HStack, IconButton, Stack, Text } from "@chakra-ui/react";
+import Image from "next/image";
+
+import Container from "@/components/Container";
+import SvgInsert from "@/components/SvgInsert";
+import Title from "@/components/Title";
 
 import s from "./style.module.scss";
-import Image from "next/image";
-import SvgInsert from "@/components/SvgInsert";
-import Container from "@/components/Container";
-import Title from "@/components/Title";
 
 export default function HomeHero(): React.ReactElement {
   return (

@@ -1,14 +1,15 @@
 "use client";
 
 import { Box, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import gsap from "gsap";
 import Image from "next/image";
-import s from "./style.module.scss";
+import { useRef } from "react";
+
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
 import { useScrollTrigger } from "@/hooks/common/useScrollTrigger";
-import gsap from "gsap";
+
+import s from "./style.module.scss";
 
 export default function HomeAbout(): React.ReactElement {
   const bgRef = useRef<HTMLDivElement>(null);
@@ -26,7 +27,7 @@ export default function HomeAbout(): React.ReactElement {
         });
       },
     },
-    [bgRef]
+    [bgRef],
   );
 
   return (

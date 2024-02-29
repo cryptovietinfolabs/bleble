@@ -1,13 +1,15 @@
 "use client";
 
-import Image from "next/image";
-import s from "./style.module.scss";
 import { Box, Card, CardBody, HStack, Stack, Text } from "@chakra-ui/react";
-import { howToBuySteps } from "@/constants/howToBuySteps";
+import Image from "next/image";
+import { useRef } from "react";
+
 import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { evening } from "@/constants/fonts";
-import { useRef } from "react";
+import { howToBuySteps } from "@/constants/howToBuySteps";
+
+import s from "./style.module.scss";
 
 export default function HomeHowToBuy(): React.ReactElement {
   const stepsRef = useRef<HTMLDivElement[]>([]);

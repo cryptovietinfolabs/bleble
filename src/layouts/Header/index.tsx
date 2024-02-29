@@ -1,17 +1,16 @@
 "use client";
 
-import { Box, Button, HStack, IconButton, Text } from "@chakra-ui/react";
+import { Box, Button, HStack } from "@chakra-ui/react";
 import Container from "@Components/Container";
 import Image from "next/image";
+import { useState } from "react";
 
 import { navList } from "@/constants/navList";
 import useWindowSize from "@/hooks/common/useWindowSize";
 
 import DesktopNav from "./components/DesktopNav";
-import s from "./style.module.scss";
-import SvgInsert from "@/components/SvgInsert";
 import DrawerNav from "./components/DrawerNav";
-import { useState } from "react";
+import s from "./style.module.scss";
 
 export default function Header(): React.ReactElement {
   const { isMobile } = useWindowSize();

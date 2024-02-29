@@ -1,8 +1,10 @@
-import { navList } from "@/constants/navList";
-import s from "./style.module.scss";
 import { Button, Text } from "@chakra-ui/react";
-import useUiContext from "@/contexts/UiProvider";
+
+import { navList } from "@/constants/navList";
 import { useScroll } from "@/contexts/ScrollProvider";
+import useUiContext from "@/contexts/UiProvider";
+
+import s from "./style.module.scss";
 
 interface DrawerNavProps {
   isOpen: boolean;

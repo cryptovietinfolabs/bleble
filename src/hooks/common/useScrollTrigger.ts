@@ -1,7 +1,8 @@
+// @ts-ignore
 /* eslint-disable no-unused-vars */
-import { gsap } from 'gsap';
-import { MutableRefObject, useEffect, useRef } from 'react';
-import { default as ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { default as ScrollTrigger } from "gsap/ScrollTrigger";
+import { MutableRefObject, useEffect, useRef } from "react";
 
 type IProp = {
   trigger: MutableRefObject<
@@ -39,12 +40,12 @@ export const useScrollTrigger = (
     onToggle,
     onUpdate,
   }: IProp,
-  deep = new Array<any>()
+  deep = new Array<any>(),
 ): any => {
   const refOg = useRef<any>({ scroller: null, timeOut: null });
   useEffect(() => {
     if (trigger) {
-      const ScrollTrigger = require('gsap/ScrollTrigger').default;
+      const ScrollTrigger = require("gsap/ScrollTrigger").default;
       gsap.registerPlugin(ScrollTrigger);
       refOg.current.id = (Math.random() * 1000000000).toString();
       refOg.current.scroller && refOg.current.scroller.refresh();

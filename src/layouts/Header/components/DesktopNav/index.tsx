@@ -3,10 +3,10 @@
 import { Button, HStack, Text } from "@chakra-ui/react";
 
 import { INavItem } from "@/constants/navList";
-
-import s from "../../style.module.scss";
 import { useScroll } from "@/contexts/ScrollProvider";
 import useUiContext from "@/contexts/UiProvider";
+
+import s from "../../style.module.scss";
 
 interface IDesktopNav {
   navList: INavItem[];

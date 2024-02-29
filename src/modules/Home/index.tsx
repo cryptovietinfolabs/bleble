@@ -1,16 +1,17 @@
 "use client";
 import { Stack } from "@chakra-ui/react";
+import { useEffect, useRef } from "react";
 
-import HomeHero from "./components/Hero";
+import SectionIndicatorWrapper from "@/components/SectionIndicatorWrapper";
+import { useScroll } from "@/contexts/ScrollProvider";
+
 import HomeAbout from "./components/About";
-import s from "./style.module.scss";
+import HomeContact from "./components/Contact";
+import HomeHero from "./components/Hero";
 import HomeHowToBuy from "./components/HowToBuy";
 import HomeNftnomics from "./components/Nftnomics";
 import HomeRoadmap from "./components/Roadmap";
-import HomeContact from "./components/Contact";
-import SectionIndicatorWrapper from "@/components/SectionIndicatorWrapper";
-import { useEffect, useRef } from "react";
-import { useScroll } from "@/contexts/ScrollProvider";
+import s from "./style.module.scss";
 
 export default function HomePage(): React.ReactElement {
   const { scrollRefs } = useScroll();

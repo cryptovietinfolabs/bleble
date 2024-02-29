@@ -1,12 +1,14 @@
 "use client";
 import { Box, SimpleGrid, Stack, Text } from "@chakra-ui/react";
-import s from "./style.module.scss";
+import gsap from "gsap";
 import Image from "next/image";
+import { useRef } from "react";
+
 import Container from "@/components/Container";
 import Title from "@/components/Title";
-import { useRef } from "react";
 import { useScrollTrigger } from "@/hooks/common/useScrollTrigger";
-import gsap from "gsap";
+
+import s from "./style.module.scss";
 
 export default function HomeNftnomics(): React.ReactElement {
   const textRef = useRef<HTMLDivElement>(null);
@@ -25,7 +27,7 @@ export default function HomeNftnomics(): React.ReactElement {
         });
       },
     },
-    [textRef]
+    [textRef],
   );
 
   return (
