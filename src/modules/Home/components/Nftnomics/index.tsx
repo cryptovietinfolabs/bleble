@@ -2,7 +2,8 @@
 import { Box, Flex, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 import Container from "@/components/Container";
 import Title from "@/components/Title";
@@ -13,22 +14,44 @@ import s from "./style.module.scss";
 export default function HomeNftnomics(): React.ReactElement {
   const textRef = useRef<HTMLDivElement>(null);
 
-  useScrollTrigger(
-    {
-      trigger: textRef,
-      start: "top bottom",
-      end: "bottom bottom",
-      onEnter: () => {
-        gsap.from(textRef.current, {
-          opacity: 0,
-          yPercent: 10,
-          ease: "power1.in",
-          duration: 1.5,
-        });
-      },
-    },
-    [textRef],
-  );
+  useEffect(() => {
+    const gsapContext = gsap.context(() => {
+      ScrollTrigger.create({
+        once: true,
+        trigger: textRef.current,
+        start: "top bottom",
+        end: "bottom bottom",
+        onEnter: () => {
+          gsap.from(textRef.current, {
+            opacity: 0,
+            yPercent: 10,
+            ease: "power1",
+            duration: 1.5,
+          });
+        },
+      })
+    }, [textRef])
+    return () => {
+      gsapContext.revert()
+    }
+  }, [textRef])
+
+  // useScrollTrigger(
+  //   {
+  //     trigger: textRef,
+  //     start: "top bottom",
+  //     end: "bottom bottom",
+  //     onEnter: () => {
+  //       gsap.from(textRef.current, {
+  //         opacity: 0,
+  //         yPercent: 10,
+  //         ease: "power1.in",
+  //         duration: 1.5,
+  //       });
+  //     },
+  //   },
+  //   [textRef],
+  // );
 
   return (
     <Container>
