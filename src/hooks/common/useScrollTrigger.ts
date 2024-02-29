@@ -1,5 +1,5 @@
+/* eslint-disable */
 // @ts-ignore
-/* eslint-disable no-unused-vars */
 import { gsap } from "gsap";
 import { default as ScrollTrigger } from "gsap/ScrollTrigger";
 import { MutableRefObject, useEffect, useRef } from "react";
