@@ -12,7 +12,10 @@ import Template from "./template";
 
 export const metadata: Metadata = {
   title: "BleBle",
-  description: "BleBle - Meme of #NFT on Blast.",
+  description: "The First Pure Meme NFT on Blast.",
+  openGraph: {
+    images: "/bleble-face.png",
+  },
 };
 
 export default function RootLayout({
