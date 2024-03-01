@@ -42,14 +42,7 @@ export default function HomeHowToBuy(): React.ReactElement {
                     >
                       {step.title}
                     </Text>
-                    <Text
-                      whiteSpace="pre-wrap"
-                      fontSize="2xl"
-                      color="brand.yellow.100"
-                      className={s.htb_desc}
-                    >
-                      {step.desc}
-                    </Text>
+                    <Box className={s.htb_desc}>{step.desc}</Box>
                   </Stack>
                 </HStack>
               </CardBody>

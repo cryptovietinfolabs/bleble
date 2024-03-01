@@ -3,10 +3,13 @@ import Image from "next/image";
 
 import Container from "@/components/Container";
 import SvgInsert from "@/components/SvgInsert";
+import useWindowSize from "@/hooks/common/useWindowSize";
 
 import s from "./style.module.scss";
 
 export default function HomeHero(): React.ReactElement {
+  const { isDesktop } = useWindowSize();
+
   return (
     <Container>
       <Stack className={s.hero} spacing={4}>
@@ -16,7 +19,11 @@ export default function HomeHero(): React.ReactElement {
           justifyContent="space-between"
           flexDirection={{ base: "column-reverse", md: "row" }}
         >
-          <Stack className={s.hero_punchline} spacing={6}>
+          <Stack
+            className={s.hero_punchline}
+            spacing={6}
+            alignItems={{ base: "center", md: "flex-start" }}
+          >
             {/* <Title color="brand.yellow.100">BLE BLE</Title> */}
             <Box className={s.hero_title}>
               <Image src={"/bleble.png"} alt="blble logo" fill />
@@ -47,7 +54,11 @@ export default function HomeHero(): React.ReactElement {
             </Box> */}
           </Stack>
           <Box className={s.hero_mascot}>
-            <Image src="/bleble-group.png" alt="ble ble face" fill />
+            {!isDesktop ? (
+              <Image src="/bleble-group-mobile.png" alt="ble ble group" fill />
+            ) : (
+              <Image src="/bleble-group.png" alt="ble ble face" fill />
+            )}
           </Box>
         </HStack>
       </Stack>

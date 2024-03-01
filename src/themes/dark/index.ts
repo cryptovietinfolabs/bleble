@@ -29,11 +29,14 @@ export const Button: ComponentStyleConfig = {
     },
     ghost: {
       color: "brand.camo.200",
+      svg: {
+        transition: "all 0.3s ease-in-out",
+        fill: "brand.yellow.100",
+      },
       _hover: {
         color: "brand.yellow.100",
         svg: {
-          transition: "all 0.3s ease-in-out",
-          fill: "brand.yellow.100",
+          fill: "brand.yellow.200",
         },
       },
     },

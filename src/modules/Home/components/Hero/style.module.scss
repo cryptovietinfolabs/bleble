@@ -30,7 +30,7 @@
   &_mascot {
     position: relative;
     aspect-ratio: 600/533;
-    width: 250px;
+    width: 80%;
 
     @include min-tablet {
       width: 500px;

@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     gap: rem(23px);
-    background-color: var(--black);
+    background-color: var(--brand-camo-400);
     border-bottom: 1px solid var(--light-grey);
   }
 
@@ -32,7 +32,10 @@
     align-items: center;
     text-decoration: none;
     width: rem(288px);
-    opacity: 0.5;
+    // opacity: 0.5;
+    * {
+      color: var(--brand-camo-200) !important;
+    }
   }
 
   // &_itemActive {
@@ -52,5 +55,7 @@
 }
 
 .active {
-  opacity: 1 !important;
+  * {
+    color: var(--brand-yellow-100) !important;
+  }
 }

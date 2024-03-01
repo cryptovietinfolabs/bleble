@@ -23,7 +23,7 @@ export default function HomeContact(): React.ReactElement {
               isRound
               variant="ghost"
               icon={<SvgInsert src="/icons/x.svg" />}
-              aria-label="x"
+              aria-label="x-twitter"
             />
             <IconButton
               isRound
