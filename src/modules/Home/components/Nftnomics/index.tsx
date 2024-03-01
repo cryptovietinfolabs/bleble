@@ -74,7 +74,7 @@ export default function HomeNftnomics(): React.ReactElement {
             </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
-                PreSale: 48% for Add LP
+                LaunchPad: 48% for Add LP
               </Text>
             </ListItem>
             <ListItem>
