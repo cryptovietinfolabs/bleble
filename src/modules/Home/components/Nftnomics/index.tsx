@@ -63,7 +63,7 @@ export default function HomeNftnomics(): React.ReactElement {
           </Title>
           <Stack gap={0}>
             <Title size="md" color="brand.yellow.100">
-              Total NFT: Coming soon
+              Total NFT: 100,000,000,000
             </Title>
           </Stack>
           <UnorderedList>
