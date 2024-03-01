@@ -25,7 +25,6 @@ export default function HomeHowToBuy(): React.ReactElement {
           trigger: step,
           start: "top bottom",
           end: "bottom bottom",
-          markers: true,
           onEnter: () => {
             gsap.fromTo(
               step,
