@@ -15,11 +15,11 @@ export const howToBuySteps = [
           RPC:{" "}
           <Link
             href="
-            http://mainnet.blast.io
+            https://rpc.blast.io/
             "
             target="_blank"
           >
-            http://mainnet.blast.io
+            https://rpc.blast.io/
           </Link>
         </Text>
 

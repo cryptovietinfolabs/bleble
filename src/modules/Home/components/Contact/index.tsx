@@ -24,6 +24,9 @@ export default function HomeContact(): React.ReactElement {
               variant="ghost"
               icon={<SvgInsert src="/icons/x.svg" />}
               aria-label="x-twitter"
+              as="a"
+              href="https://twitter.com/bleble_blast"
+              target="_blank"
             />
             <IconButton
               isRound

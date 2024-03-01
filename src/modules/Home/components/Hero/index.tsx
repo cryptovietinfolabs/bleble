@@ -38,7 +38,10 @@ export default function HomeHero(): React.ReactElement {
                 isRound
                 variant="ghost"
                 icon={<SvgInsert src="/icons/x.svg" />}
-                aria-label="x"
+                aria-label="x-twitter"
+                as="a"
+                href="https://twitter.com/bleble_blast"
+                target="_blank"
               />
               <IconButton
                 isRound
