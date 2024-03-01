@@ -59,14 +59,19 @@ export default function HomeNftnomics(): React.ReactElement {
 
         <Stack spacing={6} ref={textRef} justifyContent="center">
           <Title className={s.nftnomics_title} color="brand.yellow.100">
-            Nft Nomics
+            NFT Nomics
           </Title>
           <Stack gap={0}>
             <Title size="md" color="brand.yellow.100">
-              Total NFT: 100,000,000,000
+              NFT Supply: 100,000,000,000
             </Title>
           </Stack>
           <UnorderedList>
+            <ListItem>
+              <Text fontSize="2xl" color="brand.yellow.100">
+                Standard: ERC-1155
+              </Text>
+            </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
                 2% Airdrop (NFT holders, Staked ETH on Blast, $PePe Holders …)
@@ -74,12 +79,12 @@ export default function HomeNftnomics(): React.ReactElement {
             </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
-                LaunchPad: 48% for Add LP
+                49% to LaunchPad
               </Text>
             </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
-                Add LP (NFT/ETH): 100%
+                49% to Add LP (NFT/ETH pair)
               </Text>
             </ListItem>
           </UnorderedList>
