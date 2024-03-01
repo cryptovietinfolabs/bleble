@@ -36,7 +36,7 @@ export default function HomeContact(): React.ReactElement {
             />
           </HStack>
           <Text fontSize="3xl" color="brand.yellow.100" textAlign="center">
-            Ble Ble NFT has no organization, no leader, no roadmap - so Ble Ble
+            Ble Ble NFT has no organization, no leader, no phase - so Ble Ble
             has no intrinsic value. Ble Ble is simply yours, for you and for
             strong Blast community.
           </Text>

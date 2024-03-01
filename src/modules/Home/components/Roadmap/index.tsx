@@ -8,9 +8,9 @@ import s from "./style.module.scss";
 
 export default function HomeRoadmap(): React.ReactElement {
   return (
-    <Container className={s.roadmap}>
-      <VStack spacing={6} className={s.roadmap_inner}>
-        <Title className={s.roadmap_title} color="brand.yellow.100">
+    <Container className={s.phase}>
+      <VStack spacing={6} className={s.phase_inner}>
+        <Title className={s.phase_title} color="brand.yellow.100">
           3 Phases
         </Title>
         <Stack>
@@ -26,8 +26,8 @@ export default function HomeRoadmap(): React.ReactElement {
         </Stack>
       </VStack>
 
-      <Box className={s.roadmap_noteBg_wrapper}>
-        <Box className={s.roadmap_noteBg}>
+      <Box className={s.phase_noteBg_wrapper}>
+        <Box className={s.phase_noteBg}>
           <Image src="/note.png" alt="note" fill />
         </Box>
       </Box>

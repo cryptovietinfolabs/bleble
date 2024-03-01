@@ -12,13 +12,13 @@ import {
 } from "react";
 
 interface Props extends PropsWithChildren {
-  section: "/" | "about" | "how-to-buy" | "nft-nomics" | "roadmap" | "contact";
+  section: "/" | "about" | "how-to-buy" | "nft-nomics" | "phase" | "contact";
   sectionBefore?:
     | "/"
     | "about"
     | "how-to-buy"
     | "nft-nomics"
-    | "roadmap"
+    | "phase"
     | "contact";
   children?: ReactNode;
 }

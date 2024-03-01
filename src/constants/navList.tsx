@@ -21,8 +21,8 @@ export const navList: INavItem[] = [
     link: "nft-nomics",
   },
   {
-    name: "Roadmap",
-    link: "roadmap",
+    name: "Phase",
+    link: "phase",
   },
   {
     name: "Contact",

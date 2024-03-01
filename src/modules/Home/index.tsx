@@ -27,7 +27,7 @@ export default function HomePage(): React.ReactElement {
     scrollRefs.about = aboutRef;
     scrollRefs["how-to-buy"] = howToBuyRef;
     scrollRefs["nft-nomics"] = nftnomicsRef;
-    scrollRefs.roadmap = roadmapRef;
+    scrollRefs.phase = roadmapRef;
     scrollRefs.contact = contactRef;
   }, [
     homeRef,
@@ -61,7 +61,7 @@ export default function HomePage(): React.ReactElement {
           <HomeNftnomics />
         </div>
       </SectionIndicatorWrapper>
-      <SectionIndicatorWrapper section="roadmap">
+      <SectionIndicatorWrapper section="phase">
         <div ref={roadmapRef}>
           <HomeRoadmap />
         </div>

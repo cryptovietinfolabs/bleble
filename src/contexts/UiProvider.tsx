@@ -30,14 +30,14 @@ export type tLogoColor =
   | "about"
   | "how-to-buy"
   | "nft-nomics"
-  | "roadmap"
+  | "phase"
   | "contact";
 export type tHeaderColor =
   | "/"
   | "about"
   | "how-to-buy"
   | "nft-nomics"
-  | "roadmap"
+  | "phase"
   | "contact";
 export type tLayout = number;
 
