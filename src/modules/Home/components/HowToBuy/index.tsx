@@ -1,6 +1,8 @@
 "use client";
 
 import { Box, Card, CardBody, HStack, Stack, Text } from "@chakra-ui/react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
@@ -8,8 +10,6 @@ import Container from "@/components/Container";
 import Title from "@/components/Title";
 import { evening } from "@/constants/fonts";
 import { howToBuySteps } from "@/constants/howToBuySteps";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import s from "./style.module.scss";
 
@@ -40,7 +40,7 @@ export default function HomeHowToBuy(): React.ReactElement {
                 opacity: 1,
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
                 y: "0%",
-              }
+              },
             );
           },
         });
