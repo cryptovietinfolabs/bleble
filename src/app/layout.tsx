@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "BleBle",
   description: "The First Pure Meme NFT on Blast.",
   openGraph: {
-    images: "/thumbnail.png",
+    images: "https://bleble.vip/thumbnail.png",
   },
 };
 
