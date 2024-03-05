@@ -5,13 +5,13 @@ import Container from "@Components/Container";
 import Image from "next/image";
 import { useState } from "react";
 
+import { evening } from "@/constants/fonts";
 import { navList } from "@/constants/navList";
 import useWindowSize from "@/hooks/common/useWindowSize";
 
 import DesktopNav from "./components/DesktopNav";
 import DrawerNav from "./components/DrawerNav";
 import s from "./style.module.scss";
-import { evening } from "@/constants/fonts";
 
 export default function Header(): React.ReactElement {
   const { isDesktop } = useWindowSize();
