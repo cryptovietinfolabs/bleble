@@ -20,7 +20,7 @@ export const Button: ComponentStyleConfig = {
   variants: {
     solid: {
       color: "black",
-      bg: "brand.yellow.200",
+      bg: "brand.camo.200",
       transition: "all 0.3s ease-in-out",
       _hover: {
         bg: "brand.yellow.200",

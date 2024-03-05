@@ -11,7 +11,7 @@ import Providers from "./providers";
 import Template from "./template";
 
 export const metadata: Metadata = {
-  title: "BleBle",
+  title: "BleBle - The First MemeNFT on Blast",
   description: "The First Pure Meme NFT on Blast.",
   openGraph: {
     images: "https://bleble.vip/thumbnail.png",
