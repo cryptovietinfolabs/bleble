@@ -14,7 +14,25 @@ export const metadata: Metadata = {
   title: "BleBle - The First MemeNFT on Blast",
   description: "The First Pure Meme NFT on Blast.",
   openGraph: {
-    images: "https://bleble.vip/thumbnail.png",
+    images: {
+      url: "https://bleble.vip/thumbnail.png",
+      alt: "BLEBLE",
+    },
+    description: "The First Pure Meme NFT on Blast.",
+    type: "website",
+    locale: "en_IE",
+    title: "BLE BLE - The First MemeNFT on Blast",
+  },
+  twitter: {
+    title: "BleBle - The First MemeNFT on Blast",
+    description: "The First Pure Meme NFT on Blast.",
+    site: "@site",
+    creator: "@bleble_blast",
+    card: "summary_large_image",
+    images: {
+      url: "https://bleble.vip/thumbnail.png",
+      alt: "BLEBLE",
+    },
   },
 };
 
