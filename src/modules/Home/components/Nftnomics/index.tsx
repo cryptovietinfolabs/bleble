@@ -79,7 +79,7 @@ export default function HomeNftnomics(): React.ReactElement {
             </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
-                Sale to the community
+                40% Sale to the community
               </Text>
             </ListItem>
             <ListItem>
