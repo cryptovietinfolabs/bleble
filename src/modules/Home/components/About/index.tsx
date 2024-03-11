@@ -40,8 +40,8 @@ export default function HomeAbout(): React.ReactElement {
           <Stack spacing={4}>
             <Title color="brand.yellow.100">About</Title>
             <Text fontSize="3xl" color="brand.yellow.100">
-              Ble Ble is a funny meme nft for the people, forever (zero taxes,
-              LP burnt and contract renounced).
+              Ble Ble is a funny meme nft for the people, forever (LP burnt and
+              contract renounced).
             </Text>
 
             <Text fontSize="3xl" color="brand.yellow.100">

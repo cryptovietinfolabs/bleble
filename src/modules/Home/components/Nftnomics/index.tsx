@@ -63,7 +63,7 @@ export default function HomeNftnomics(): React.ReactElement {
           </Title>
           <Stack gap={0}>
             <Title size="md" color="brand.yellow.100">
-              NFT Supply: 100,000,000,000
+              NFT Supply: 420,690,000,000
             </Title>
           </Stack>
           <UnorderedList>
@@ -79,7 +79,7 @@ export default function HomeNftnomics(): React.ReactElement {
             </ListItem>
             <ListItem>
               <Text fontSize="2xl" color="brand.yellow.100">
-                49% to LaunchPad
+                Sale to the community
               </Text>
             </ListItem>
             <ListItem>
@@ -91,6 +91,9 @@ export default function HomeNftnomics(): React.ReactElement {
 
           <Text fontSize="2xl" color="brand.yellow.100">
             LP Are Burnt, contract Ownership is Renounced.
+          </Text>
+          <Text fontSize="2xl" color="brand.yellow.100">
+            Royalty 5% (2.5% buy back and burn, 2.5% bleble treasury)
           </Text>
         </Stack>
       </SimpleGrid>
